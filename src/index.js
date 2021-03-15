@@ -101,7 +101,6 @@ app.put(
 app.patch(
   "/todos/:id/done",
   checksExistsUserAccount,
-  checksIfTodoExists,
   (request, response) => {
     const { todo } = request;
 
